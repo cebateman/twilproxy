@@ -6,10 +6,3 @@ from twilio.rest import Client
 account_sid = 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 auth_token = 'your_auth_token'
 client = Client(account_sid, auth_token)
-
-session = client.proxy.services(service.sid) \
-                      .sessions \
-                      .create(unique_name='20 Minutes Session')
-
-print(session.sid)
-print(service.sid)

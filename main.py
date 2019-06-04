@@ -20,7 +20,7 @@ def create_proxy():
                             .sessions(session.sid) \
                             .participants \
                             .create(friendly_name='Caller1', identifier='+12537929893')
-        print('created participatn:')
+        print('created participant:')
         print(participant.sid)
         print(participant.proxy_identifier)
     else:

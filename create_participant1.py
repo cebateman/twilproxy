@@ -7,12 +7,3 @@ from twilio.rest import Client
 account_sid = 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 auth_token = 'your_auth_token'
 client = Client(account_sid, auth_token)
-
-participant = client.proxy \
-                    .services('KSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX') \
-                    .sessions('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX') \
-                    .participants \
-                    .create(friendly_name='Caller1', identifier='+12537929893')
-
-print(participant.sid)
-print(participant.proxy_identifier)
